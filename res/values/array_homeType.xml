@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="home_type">
+        <item>모텔</item>
+        <item>호텔</item>
+        <item>펜션</item>
+        <item>민박</item>
+        <item>찜질방</item>
+        <item>게스트하우스</item>
+        <item>기타</item>
+    </string-array>
+
+</resources>

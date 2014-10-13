@@ -1,0 +1,154 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Fluke.org.project3.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="0.2"
+            android:background="#aaAFEEEE" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="0.6"
+            android:background="#aaAFEEEE"
+            android:gravity="center"
+            android:text="Main"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="#aaAFEEEE"
+            android:text="ok" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Frame1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/user_id_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/user_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Youjin_Mon" />
+
+            <TextView
+                android:id="@+id/writing_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="2014.09.20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_id_line" >
+
+            <RelativeLayout
+                android:id="@+id/image_box"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.82"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/trip_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_image1"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/like_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/trip_image" >
+
+                    <ImageView
+                        android:id="@+id/lamge_re"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_launcher"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:id="@+id/text_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:text="좋아요 50" />
+
+                    <ImageView
+                        android:id="@+id/image_go"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_launcher"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:id="@+id/text_re"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:text="댓글77" />
+
+                    <ImageView
+                        android:id="@+id/lamge_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_launcher"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:id="@+id/text_go"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:text="갈래37" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Btn1"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignBottom="@+id/trip_image"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/trip_image"
+                    android:background="#FFF0F8FF"
+                    android:text="  여수여행 다녀왔어요=^^=" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

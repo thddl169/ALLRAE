@@ -1,0 +1,646 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fluke.org.project3.MainActivity$PlaceholderFragment"
+     android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+
+        android:orientation="horizontal"  >
+
+        <ImageButton
+            android:id="@+id/search_area_before"
+              android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+             android:background="#aaAFEEEE" />
+
+        <TextView
+                    android:background="#aaAFEEEE"
+            android:id="@+id/title_text"
+           android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:paddingTop="13dp"
+            android:text="Serach"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/search_area_ok"
+           android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#aaAFEEEE"
+            android:text="ok" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/slidingPage01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#50C0C0C0"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1인당 비용" />
+
+                <Spinner
+                    android:id="@+id/mySpinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:prompt="@string/pay" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:text="계절" />
+
+                 <RadioGroup
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:text="전체" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="봄" />
+
+                <RadioButton
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:text="여름" />
+
+                <RadioButton
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:text="가을" />
+
+                <RadioButton
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text="겨울" />
+
+            </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인원" />
+
+                 <RadioGroup
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="horizontal" >
+                
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전체" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="혼자" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="두명 " />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="단체" />
+                 </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.00"
+                    android:text="주요" />
+                
+                  <RadioGroup
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.00"
+                    android:text="자동차" />
+
+                <RadioButton
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.00"
+                    android:text="대중교통 " />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.00"
+                    android:text="도보" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="출발지" />
+
+                <TableLayout
+                    android:id="@+id/TableLayout01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp" >
+
+                    <TableRow>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="강원"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="경기"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="경남"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="경북"
+                            android:textSize="12dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="광주"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="대구"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="대전"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="부산"
+                            android:textSize="12dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="서울"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="전남"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="세종"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="인천"
+                            android:textSize="12dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="울산"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="전북"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="제주"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="충남"
+                            android:textSize="12dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="2dp"
+                            android:background="#aaAFEEEE"
+                            android:text="충북"
+                            android:textSize="12dp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="숙소" />
+
+                <TableLayout
+                    android:id="@+id/TableLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp" >
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="all" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="hotel" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="motel" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="guest" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sauna" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="pension" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="etc" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/openBtn01"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#50C0C0C0"
+            android:text="상세검색" />
+    </LinearLayout>
+  
+    <LinearLayout
+        android:id="@+id/search_destination_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/login_email_layout"
+        android:layout_below="@+id/login_logo"
+        android:orientation="horizontal" >
+
+       
+         <TextView
+            android:id="@+id/search_destination_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="여행지로 검색" />
+           
+        <EditText
+            android:id="@+id/search_destination_edit"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textEmailAddress" 
+            >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+    
+  <LinearLayout
+        android:id="@+id/search_area_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_destination_layout"
+        android:orientation="vertical"
+        
+         >
+        <TextView
+            android:id="@+id/search_area_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="지역으로 검색" />
+
+        <TableLayout
+            android:id="@+id/search_area_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp" >
+
+            <TableRow>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="강원"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="경기"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="경남"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="경북"
+                    android:textSize="12dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="광주"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="대구"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="대전"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="부산"
+                    android:textSize="12dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="서울"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="세종"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="인천"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="울산"
+                    android:textSize="12dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="전남"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="전북"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="제주"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="충남"
+                    android:textSize="12dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="#aaAFEEEE"
+                    android:text="충북"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        
+    </LinearLayout>    </LinearLayout>

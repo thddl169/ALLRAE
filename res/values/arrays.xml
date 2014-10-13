@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <string-array name="pay">
+        <item>10만원 이상</item>
+        <item>20만원 이상</item>
+        <item>30만원 이상</item>
+        <item>40만원 이상</item>
+        <item>50만원 이상</item>
+    </string-array>
+</resources>

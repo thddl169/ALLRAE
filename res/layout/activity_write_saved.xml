@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="0.6"
+            android:background="#aaAFEEEE"
+            android:gravity="center"
+            android:text="@string/writing_start"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/travelnote_saved" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/button_write_continue"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_margin="10dp"
+            android:background="#ffff66"
+            android:text="@string/button_write_continue" />
+
+        <Button
+            android:id="@+id/button_write_edit"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_margin="10dp"
+            android:background="#ffff66"
+            android:text="@string/button_write_edit" />
+
+        <Button
+            android:id="@+id/button_write_complete"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_margin="10dp"
+            android:background="#ffff66"
+            android:text="@string/button_write_complete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/button_write_hold"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:background="#ffff66"
+            android:text="@string/button_write_hold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>
