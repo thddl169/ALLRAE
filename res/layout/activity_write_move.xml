@@ -10,6 +10,7 @@
         android:layout_gravity="center"
         android:orientation="horizontal" >
 
+
         <TextView
             android:layout_width="0dip"
             android:layout_height="50dp"
@@ -45,15 +46,14 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/write_transfer_info"
-                android:textSize="16sp" />
+                android:text="@string/write_transfer_info" />
         </LinearLayout>
 
         <LinearLayout
@@ -133,7 +133,7 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:gravity="center" >
 
             <TextView
@@ -141,15 +141,15 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/write_transfer_time" >
+                android:text="@string/write_transfer_time">
             </TextView>
 
             <EditText
                 android:id="@+id/write_transfer_time"
+                android:inputType="number"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight=" 2"
-                android:inputType="number" />
+                android:layout_weight=" 2" />
 
             <TextView
                 android:layout_width="0dp"
@@ -161,7 +161,7 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:gravity="center" >
 
             <TextView
@@ -169,15 +169,15 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/write_transfer_cost" >
+                android:text="@string/write_transfer_cost">
             </TextView>
 
             <EditText
                 android:id="@+id/write_transfer_cost"
+                android:inputType="number"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:inputType="number" />
+                android:layout_weight="2" />
 
             <TextView
                 android:layout_width="0dp"

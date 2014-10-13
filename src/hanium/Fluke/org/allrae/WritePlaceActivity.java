@@ -1,19 +1,23 @@
 package hanium.Fluke.org.allrae;
 
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class WritePlaceActivity extends ImageSelectHelperActivity {
+public class WritePlaceActivity extends ActionBarActivity {
 
 	private Button dateBtn;
 	private TextView dateTxt;
@@ -35,15 +39,6 @@ public class WritePlaceActivity extends ImageSelectHelperActivity {
 			}
 
 		});
-		Button button_album = (Button) findViewById(R.id.button_album);
-		button_album.setOnClickListener(new View.OnClickListener() {
-					@Override
-					public void onClick(View arg0) {
-						startSelectImage();
-					}
-				});
-
-		getSelectedImageFile(); 
 
 		dateTxt = (TextView) findViewById(R.id.date_txt);
 		dateBtn = (Button) findViewById(R.id.date_btn);
@@ -67,7 +62,7 @@ public class WritePlaceActivity extends ImageSelectHelperActivity {
 	}
 
 	private void updateDate() {
-		String str = mYear + "ÎÖÑ " + (mMonth + 1) + "Ïõî " + mDay + "Ïùº ";
+		String str = mYear + "≥‚" + (mMonth + 1) + "ø˘" + mDay + "¿œ";
 		dateTxt.setText(str);
 	}
 

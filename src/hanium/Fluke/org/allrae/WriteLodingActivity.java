@@ -6,18 +6,15 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.RatingBar;
-import android.widget.RatingBar.OnRatingBarChangeListener;
-import android.widget.Spinner;
 import android.widget.TextView;
 
-public class WriteLodingActivity extends ImageSelectHelperActivity {
+public class WriteLodingActivity extends ActionBarActivity {
 
 	private Button dateBtn;
 	private TextView dateTxt;
@@ -40,22 +37,6 @@ public class WriteLodingActivity extends ImageSelectHelperActivity {
 
 		});
 
-		Button button_album = (Button) findViewById(R.id.button_album);
-		button_album.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				startSelectImage();
-			}
-		});
-
-		getSelectedImageFile();
-
-		Spinner spineer1 = (Spinner) findViewById(R.id.mySpinner1);
-		ArrayAdapter adapter1 = ArrayAdapter.createFromResource(this,
-				R.array.home_type, android.R.layout.simple_spinner_item);
-		adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spineer1.setAdapter(adapter1);
-
 		dateTxt = (TextView) findViewById(R.id.date_txt);
 		dateBtn = (Button) findViewById(R.id.date_btn);
 
@@ -69,19 +50,6 @@ public class WriteLodingActivity extends ImageSelectHelperActivity {
 			}
 		});
 
-		final RatingBar ratingbar1 = (RatingBar) findViewById(R.id.ratingBar1);
-		ratingbar1
-				.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
-
-					@Override
-					public void onRatingChanged(RatingBar ratingBar,
-							float rating, boolean fromUser) {
-						// TODO Auto-generated method stub
-
-					}
-
-				});
-
 		final Calendar c = Calendar.getInstance();
 		mYear = c.get(Calendar.YEAR);
 		mMonth = c.get(Calendar.MONTH);
@@ -91,7 +59,7 @@ public class WriteLodingActivity extends ImageSelectHelperActivity {
 	}
 
 	private void updateDate() {
-		String str = mYear + "ÎÖÑ " + (mMonth + 1) + "Ïõî " + mDay + "Ïùº ";
+		String str = mYear + "≥‚" + (mMonth + 1) + "ø˘" + mDay + "¿œ";
 		dateTxt.setText(str);
 	}
 

@@ -39,14 +39,15 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/button_bar1"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
         android:padding="10dp" >
 
         <Button
             android:id="@+id/button_write_continue"
+            style="?android:attr/buttonBarStyle"
             android:layout_width="81dp"
             android:layout_height="81dp"
             android:layout_margin="10dp"
@@ -55,6 +56,7 @@
 
         <Button
             android:id="@+id/button_write_edit"
+            style="?android:attr/buttonBarStyle"
             android:layout_width="81dp"
             android:layout_height="81dp"
             android:layout_margin="10dp"
@@ -63,6 +65,7 @@
 
         <Button
             android:id="@+id/button_write_complete"
+            style="?android:attr/buttonBarStyle"
             android:layout_width="81dp"
             android:layout_height="81dp"
             android:layout_margin="10dp"
@@ -71,13 +74,15 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/button_bar2"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:padding="10dp" >
 
         <Button
             android:id="@+id/button_write_hold"
+            style="?android:attr/buttonBarStyle"
             android:layout_width="81dp"
             android:layout_height="81dp"
             android:background="#ffff66"

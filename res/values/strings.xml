@@ -13,11 +13,7 @@
     <string name="button_skip">Skip</string>
     <string name="button_save">Save</string>
     <string name="button_end">End</string>
-    <string name="button_album">Album</string>
     <string name="pay">원</string>
-    <string name="cost_spinner">선택</string>
-    <string name="hometype_spinner">선택</string>
-    <string name="area_spinner">선택</string>
     <string name="writing_start">여행기 작성</string>
     <string name="basic_info">여행기 시작</string>
     <string name="category_select">카테고리 선택</string>
